@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">PassX Manager</div>
+        <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Secure Password Manager</h1>
+        <form id="passwordForm">
+            <label for="platform">Platform:</label>
+            <input type="text" id="platform" placeholder="Enter platform (e.g., Facebook)" required>
+            
+            <label for="username">Username/Email:</label>
+            <input type="text" id="username" placeholder="Enter your username or email" required>
+
+            <label for="password">Password:</label>
+            <div class="input-group">
+                <input type="text" id="password" placeholder="Generated Password" readonly>
+                <button type="button" id="generatePassword" class="btn animate">Generate Password</button>
+            </div>
+
+            <button type="button" id="savePassword" class="btn btn-large animate">Save Password</button>
+        </form>
+
+        <button class="btn btn-view animate" onclick="location.href='view-passwords.html';">View Saved Passwords</button>
+    </div>
+
+    <div id="alert">Action completed successfully!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
